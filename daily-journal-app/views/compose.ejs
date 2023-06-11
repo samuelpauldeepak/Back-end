@@ -1,0 +1,21 @@
+<%- include("partials/header"); -%>
+<div class="box" style="background-color:white; padding: 20px; border-radius: 10px; padding-top: 1px; margin-top: 15px; min-height:78vh;">
+<h1>Compose
+</h1>
+<form action="/compose" method="post">
+  <div class="form-group">
+    <label>Title</label> &nbsp;<small>Don't use Slashes '/ or \' inbetween the Title</small>
+    <select name="postType" class="postType">
+      <option value="General" style="color: green;" selected>General</option>
+      <option value="Event" style="color: blue;">Event</option> 
+      <option value="Important" style="color: red;">Important</option>
+    </select>
+    <input class="form-control" type="text" name="postTitle" placeholder="Enter Title of the Post">
+
+    <label>Post</label>
+    <textarea id="composeContent" class="form-control" name="postBody" rows="5" cols="30"></textarea>
+  </div>
+  <button class="btn btn-primary" type="submit" name="button">Publish</button>
+</form>
+</div>
+<%- include("partials/footer"); -%>

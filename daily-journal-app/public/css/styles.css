@@ -1,0 +1,188 @@
+
+body{
+  font-family: 'Montserrat' , sans-serif;
+  font-weight: 500;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 50px;
+  background-color: #DFF6FF;
+}
+h2{
+  font-weight: 600;
+
+}
+p{
+  text-align: justify;
+}
+
+.navbar {
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 4px;
+    background-color:  #25316D;
+    color: whites;
+}
+.navbar *{
+  color: white;
+}
+.navbar-brand{
+  font-weight: 600;
+ 
+}
+.navbar-brand a{
+  text-decoration: none;
+}
+.navbar-brand a:hover{
+ color: whitesmoke;
+}
+.navbar-nav li a{
+  font-weight: 600;
+}
+.navbar-nav  li a:hover {
+    background: inherit   ;
+    color: whitesmoke;
+}
+
+.footer-padding {
+	padding-bottom: 20px;
+}
+
+.footer {
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	background-color: #25316D;
+
+}
+
+.footer p {
+  text-align: center;
+	margin-top: 16px;
+	font-size: 12px;
+  color: #fff;
+}
+
+.timeStamp{
+  font-size: 0.5em;
+  color: rgb(86, 86, 86);
+}
+.postContent{
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+.container{
+  width: 85vw;
+}
+.box{
+  box-shadow:-3px -3px 5px #ffffff90, 3px 3px 15px #00000090;
+}
+.contactMailBtn{
+  color:#25316D;
+  text-decoration: underline;
+}
+.contactButton{
+  color: white;
+  background-color:#25316D ;
+  padding: 20px;
+  margin-right: 20px;
+  font-size: 16px;
+  border : none;
+  border-radius: 10px;
+ 
+}
+.contactButton:hover{
+  text-decoration: none;
+  box-shadow: -3px -3px 5px #ffffff90, 3px 3px 15px #0b58ff90;
+  color: whitesmoke;
+}
+.contactButton:visited{
+
+  color: whitesmoke;
+}
+
+.contactWrapper{
+ margin: 30px;
+ margin-left: 0;
+ margin-top: 50px;
+}
+.messageTitle::first-letter{
+text-transform: uppercase;
+}
+.postContent::first-letter{
+  text-transform: uppercase;
+  }
+.postType{
+ margin-left: 15px;
+ border: none;
+ outline: none;
+ color: inherit;
+}
+.messageDataType{
+  font-size: 15px;
+  float: right;
+}
+.postDataType{
+  font-size: 15px;
+  position: absolute;
+  right: 225px ;
+  top: 114px;
+}
+pre{
+  white-space: pre-line;
+  font-family: 'Montserrat' , sans-serif;
+  border: none;
+  background-color: inherit;
+}
+.deleteButton{
+  position: absolute;
+  right: 145px;
+  top: 108px;
+  background-color: #25316D;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 7px;
+}
+.loginDiv{
+  width: 400px;
+  height: 450px;
+  background-color: white;
+  box-shadow: -3px -3px 5px #ffffff90, 3px 3px 15px #0b58ff90;
+  margin: auto;
+  margin-top : 50px;
+}
+.loginForm{
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 50px;
+}
+.loginForm input{
+ border: 3px solid rgb(166, 166, 166);
+ border-radius: 10px;
+ width: 90%;
+ margin-left: 15px;
+ padding: 5px 5px;
+ margin-bottom: 30px;
+ outline: none;
+}
+.loginForm label{
+  margin-left: 15px;
+}
+.loginButton{
+  width: 90%;
+  margin-left: 15px;
+  border-radius: 10px;
+  padding: 8px 5px;
+  outline: none;
+  border: none;
+  margin-top: 10px;
+  color: white;
+  background-color: #25316D;
+
+}

@@ -1,0 +1,24 @@
+<%- include("partials/header"); -%>
+<div class="box" style="background-color:white; padding: 20px; border-radius: 10px; padding-top: 1px; margin-top: 15px; min-height:78vh;">
+
+<h1 class="messageTitle" style="margin-bottom:20px; ;"><%= Title%> <span class="timeStamp"><%= new Date(time).toLocaleString("en-IN") %></span>
+    <span class="postDataType">
+        <% if (type == "General") { %>
+            <%=type %>🟢   
+        <% } else if (type == "Important") { %>
+            <%= type %>🔴 
+        <% } else if (type == "Event") { %>
+            <%= type %>🔵
+        <% } %> 
+         
+    </span>
+</h1>
+<form action="/delete/<%= id %>?_method=DELETE" method="post" >
+    <button class="deleteButton" type="submit">Delete</button>
+</form>
+<pre class="postContent"><%= Content%></pre>
+
+</div>
+
+
+<%- include("partials/footer"); -%>

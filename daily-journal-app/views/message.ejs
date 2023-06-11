@@ -1,0 +1,25 @@
+<%- include("partials/header"); -%>
+<div class="box" style="background-color:white; padding: 20px; border-radius: 10px; padding-top: 1px; margin-top: 10px;">
+    <h3 style="color:red ;">NOTE</h3>
+    <p><strong><%= Content%></strong></p>
+</div>
+
+<% [...postData].reverse().forEach(function(data){ %>
+<div class="box" style="background-color:white; padding: 20px; border-radius: 10px; padding-top: 1px; margin-top: 15px;">
+    <h2 class="messageTitle"> <%=data.title.substring(0,50) %> <span class="timeStamp"><%= new Date(data.createdAt).toDateString("en-IN") %></span>
+        <span class="messageDataType">
+            <% if (data.postType == "General") { %>
+                <%=data.postType %>🟢   
+            <% } else if (data.postType == "Important") { %>
+                <%= data.postType %>🔴 
+            <% } else if (data.postType == "Event") { %>
+                <%= data.postType %>🔵
+            <% } %> 
+             
+        </span></h2>
+    <p class="postContent"><%= data.content.substring(0,100)%>...<a href="/post/<%=data._id %>">Read More</a></p>
+
+</div>
+
+<%}); %>
+<%- include("partials/footer"); -%>

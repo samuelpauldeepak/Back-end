@@ -1,0 +1,18 @@
+<%- include("partials/header.ejs") %>
+<div class="loginDiv">
+    <h1 style="text-align: center; padding-top:10px; font-size: 48px;">Login</h1>
+<form action="/login" method="post" class="loginForm">
+    <div class="userName">
+        <label for="Name" style="display:block">User Name</label>
+        <input type="text" id="Name" name="userName"  autocomplete="off" autofocus>
+    </div>
+    <div class="password">
+        <label for="password" style="display:block">Password</label>
+        <input type="text" id="password" name="password" autocomplete="off">
+    </div>
+    <button type="submit" class="loginButton" name="button">Submit</button>
+    <h4 style="text-align: center; margin-top:15px;"><%= msg  %> </h4>
+    
+</form>
+</div>
+<%- include("partials/footer.ejs") %> 
